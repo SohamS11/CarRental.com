@@ -10,6 +10,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route />
+    hello
         </Routes>
         <Footer />
       </Router>
