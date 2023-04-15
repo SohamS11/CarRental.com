@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3.5rem;
+
+  .innerNavbar {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-family: "Shadows Into Light", cursive;
+      font-size: 30px;
+      letter-spacing: 1px;
+    }
+
+    .routing-Links {
+      display: flex;
+      width: 30%;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+    .dropdown-menu {
+      select {
+        background-color: rgb(236, 234, 234);
+        border: none;
+        padding: 5px;
+        border-radius: 2px;
+        outline: none;
+
+        option {
+          outline: none;
+        }
+      }
+    }
+  }
+}
