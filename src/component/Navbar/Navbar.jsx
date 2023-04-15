@@ -2,6 +2,12 @@ import React from "react";
 import "./Navbar.scss";
 
 const Navbar = () => {
+ cosnt [selectLanguage, setSelectLanguage] = useState('en');
+  const languageOption = [
+    { value: 'en', label: 'english'},
+    { value: 'hind', label: 'hindi'},
+    { value: 'mar', label: 'marathi'},
+    ]
   return (
     <div className="navbar">
       <div className="innerNavbar">
@@ -13,9 +19,10 @@ const Navbar = () => {
           <a href="/">Contact</a>
         </div>
         <div className="dropdown-menu">
-          <select>
-            <option>IND</option>
-            <option>ENG</option>
+          <select value={selectLanguage} onChange={(e) => setSelectLanguage(e.target.value)}>
+    {languageOption.map((option) => {
+       return < option key={option.value} value={option.value}>{option.label}</option>
+    })}
           </select>
         </div>
       </div>
